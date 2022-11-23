@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: Red;
+    font-family: Piedra,sans-serif;
+    word-spacing: 50px;
+    letter-spacing: 15px;
+    background: url(images/fog.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
