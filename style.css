@@ -6,8 +6,8 @@ body {
     font-size: 30px;
     color: Red;
     font-family: Piedra,sans-serif;
-    word-spacing: 50px;
-    letter-spacing: 15px;
+    word-spacing: 20px;
+    letter-spacing: 10px;
     background: url(images/fog.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
