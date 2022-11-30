@@ -41,6 +41,8 @@ h1 {
     letter-spacing: .9rem;
     margin-top: 0;
     color: cadetblue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 #answerText,
 .gameRound {
@@ -88,7 +90,6 @@ h1 {
 .choose{
     width:100%;
     height: 100%;
-   
 }
 
 .bottom button {
@@ -115,37 +116,53 @@ h1 {
     top: 28%;
     width: 45vw;
     height: 45vh;
-    background-color: aqua;
     border-radius: 2rem;
     order: 2;
     box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
-    background: rgb(2,0,36);
+    background: url(./images/endCard.jpeg);
+    background-position: 20% 18%;
     padding:2rem;
     opacity: .9;
 
 }
-
+#endText {
+    margin-bottom:1rem;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 3rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+.endScore{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.endScore p{
+    font-size: 5rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+.divider{
+    width: 4rem;
+    height: 8rem;
+}
 .reset{
     font-size: 2rem;
+    letter-spacing: .3rem;
     border-radius:  1rem;
     padding: 1rem;
     width: 200px;
-    border: none;
+    border: 2px solid cadetblue;
     order: 3;
-    background-color: rgb(88, 65, 54);
-    margin-bottom: 2rem;
-    color:white
-}
+    background-color: goldenrod;
+    color:white;
+}   
 .reset:hover{
-    background-color: rgb(41, 171, 69);
+    background-color: cadetblue;
     color: black;
-}
-#endText {
-    margin-bottom:10rem;
-    font-size: 2rem;
-    letter-spacing: .1rem;
-    color: rgb(41, 171, 69);
-    text-align: center;
-    line-height: 3rem;
 }
 

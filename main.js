@@ -11,24 +11,36 @@ const answerText = document.querySelector('#answerText');
 const playerScore = document.querySelector('#playerScore');
 const computerScore = document.querySelector('#computerScore');
 const gameRound = document.querySelector('.gameRound');
-
 const main = document.querySelector('main');
 
 
 const endCard = document.createElement('div');
 endCard.setAttribute('class','endCard');
-
 const endText = document.createElement('p');
 endText.setAttribute('id','endText');
+const endScore = document.createElement('div');
+endScore.setAttribute('class','endScore');
+endScorePlayer = document.createElement('p');
+endScoreComputer = document.createElement('p');
+endScoreDivider = document.createElement('img');
+endScoreDivider.setAttribute('class','divider')
+endScoreDivider.src = './images/lightningBolt.png';
+endScore.appendChild(endScorePlayer);
+endScore.appendChild(endScoreDivider);
+endScore.appendChild(endScoreComputer);
+
+
+
 
 
 const btnReset = document.createElement('button');
 btnReset.setAttribute('class','reset');
 
 btnReset.textContent ='Reset';
-
 endCard.appendChild(endText);
+endCard.append(endScore)
 endCard.appendChild(btnReset);
+
 
 
 let playerCount = 0;
@@ -141,7 +153,9 @@ function endFunction(){
    }
     main.appendChild(endCard);
     playerImg.src = './images/rps.jpg';
-    computerImg.src = './images/rps.jpg'; 
+    computerImg.src = './images/rps.jpg';
+    endScorePlayer.textContent = playerCount;
+    endScoreComputer.textContent = computerCount;
 }
 
 
