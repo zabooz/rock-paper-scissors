@@ -21,13 +21,14 @@ endText.setAttribute('id','endText');
 const endScore = document.createElement('div');
 endScore.setAttribute('class','endScore');
 endScorePlayer = document.createElement('p');
+endScorePlayer.setAttribute('class','endScorePlayer')
 endScoreComputer = document.createElement('p');
+endScoreComputer.setAttribute('class','endScoreComputer')
 endScoreDivider = document.createElement('img');
 endScoreDivider.setAttribute('class','divider')
 endScoreDivider.src = './images/lightningBolt.png';
-endScore.appendChild(endScorePlayer);
-endScore.appendChild(endScoreDivider);
-endScore.appendChild(endScoreComputer);
+endScore.append(endScorePlayer,endScoreDivider,endScoreComputer);
+
 
 
 
@@ -37,9 +38,8 @@ const btnReset = document.createElement('button');
 btnReset.setAttribute('class','reset');
 
 btnReset.textContent ='Reset';
-endCard.appendChild(endText);
-endCard.append(endScore)
-endCard.appendChild(btnReset);
+endCard.append(endText,endScore,btnReset);
+
 
 
 
