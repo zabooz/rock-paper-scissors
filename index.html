@@ -6,12 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <h1>Open console and enter "game()"</h1>
-    <script src="main.js" ></script>
+    <main>
+        <h1>Rock Paper Scissors</h1>
+        <p id="answerText"></p>
+        <div class="top">
+            <div class="playerCon"><img src="images/rps.jpg" alt="" class="gameImg playerImg"></div>
+            <div class="score">
+                <p id="playerScore">0</p>
+                <p>:</p>
+                <p id="computerScore">0</p>
+            </div>
+            <div class="computerCon"><img src="images/rps.jpg" alt="" class="gameImg computerImg"></div>
+        </div>
+        <p class="gameRound">Round 0 of 10</p>
+        <div class="bottom">
+            <button id="rock"><img class="choose" src="images/rock.jpg" alt=""></button>
+
+            <button id="paper"><img class='choose' src="images/paper.jpg" alt=""></button>
+
+             <button id="scissors"><img src="images/scissors.jpg" alt="" class="choose"></button>
+        </div>
+
+        <button class="lol">sdfhgdsfhsdfhdsfh</button>
+    </main>
 </body>
 </html>
