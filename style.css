@@ -13,7 +13,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: floralwhite;
-    height: 100vh;
+  
     
     
 }
@@ -22,11 +22,12 @@ main{
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    height: 100vh;
 }
 .top{
     display: flex;
     max-width:  89rem;
-    max-height: 20rem;
+    max-height: 18rem;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 2rem;
@@ -54,14 +55,12 @@ h1 {
     max-width: 86%;
     
 }
-#answerText{
-    margin-top: 3rem;
-}
+
 .playerCon,
 .score,
 .computerCon {
     min-width: 29rem;
-    height: 20rem;
+    height: 18rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,18 +73,17 @@ h1 {
     color:cadetblue;
 }
 .gameImg{
-    width: 18rem;
-    height: 18rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
     border: 10px inset cadetblue
 }
 .bottom {
     display: flex;
     justify-content: space-evenly;
-    padding: 2rem;
     gap:5rem;
     width: 60%;
-    height: 13rem;
+    height: 10rem;
 }
 .choose{
     width:100%;
@@ -97,8 +95,8 @@ h1 {
     background-color: white;
     border-radius: 50%;
     overflow: hidden;
-    width: 10rem;
-    height:10rem;
+    width: 8rem;
+    height:8rem;
     border: 10px inset cadetblue;
     box-shadow: 0px 0px 10px 5px grey;
     transition: width 1s, height 1s;
